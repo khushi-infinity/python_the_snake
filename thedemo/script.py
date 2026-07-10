@@ -27,3 +27,19 @@ type(6//3) # int
 
 # power
 type(2**2)
+
+#  round
+print(round(34.765, 2))
+
+# a different format to print
+score = 24
+print(f"Your score is: {score}")
+
+print(int("345"))
+
+if score > 100:
+    print("You got the trick")
+elif score <100 & score > 90:      # and or not
+    print("You many be go tthe trick")
+else :
+    print("you didn't")
