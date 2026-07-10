@@ -24,3 +24,6 @@ print(type(int("342")))
 # float and int
 type(6/3) # float
 type(6//3) # int
+
+# power
+type(2**2)
