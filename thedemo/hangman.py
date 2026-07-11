@@ -28,3 +28,16 @@ nested_list = ['A', 'B', ['C','D']]
 print(nested_list)
 print(nested_list[2])
 print(nested_list[2][1])
+
+fruit_basket = {
+    'germany' : {
+    "seasonal_fruit" : ['Water melon', 'Mango', 'Cherry'],
+    'num' : 3
+    },
+    'italy' : {
+        'seasonal_fruit' : ['Apple', 'Banana', 'Grapes'],
+        'num' : 2
+    }
+}
+
+print(fruit_basket['germany']['seasonal_fruit'][0])
