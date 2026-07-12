@@ -13,7 +13,15 @@ def make_a_square():
         forward_turn_left()
 
 
+def draw_dashed_lines(length):
+    for _ in range(length):
+        timmy.forward(10)
+        timmy.penup()
+        timmy.forward(10)
+        timmy.pendown()
+
 make_a_square()
+draw_dashed_lines(10)
 
 screen = Screen()
 screen.exitonclick()
