@@ -34,3 +34,26 @@ student_scores = {student:random.randint(1,100) for student in names}
 print(student_scores)
 passed_students = {student:score for (student, score) in student_scores.items() if score>=50}
 print(passed_students)
+
+
+# Loops through Dictionary and Dataframe
+student_dict = {
+    "student" : ["James","Alex","Lilly"],
+    "score" : [53,75,96]
+}
+
+# loop thorugh dictionary
+for (key,value) in student_dict.items():
+    print(key)
+
+import pandas
+student_data_frame = pandas.DataFrame(student_dict)
+print(student_data_frame)
+
+# loop through data frame
+for (key,value) in student_data_frame.items():
+    print(key)
+
+# built in method where loops through each of the rows
+for (index,row) in student_data_frame.iterrows():
+    print(index)
